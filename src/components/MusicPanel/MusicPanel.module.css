@@ -1,0 +1,154 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+}
+
+.spotifyLogo {
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+
+.notConnected {
+  font-size: 18px;
+  color: #0a3d52;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.subText {
+  font-size: 11px;
+  color: #1a5c75;
+  letter-spacing: 2px;
+}
+
+.connectBtn {
+  background: #0a3d52;
+  color: #5bc8f5;
+  border: none;
+  padding: 8px 20px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 8px;
+  transition: opacity 0.15s;
+}
+.connectBtn:hover { opacity: 0.85; }
+.connectBtn:active { opacity: 0.7; }
+
+.hint {
+  font-size: 9px;
+  color: #1a6a8a;
+  letter-spacing: 1px;
+}
+
+.albumArt {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid rgba(0,0,0,0.15);
+}
+
+.trackName {
+  font-size: 13px;
+  color: #0a3d52;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.artistName {
+  font-size: 11px;
+  color: #1a5c75;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.albumName {
+  font-size: 10px;
+  color: #2a7a9a;
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.progressBar {
+  width: 100%;
+  height: 4px;
+  background: rgba(0,0,0,0.15);
+  border-radius: 2px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: #0a3d52;
+  border-radius: 2px;
+  transition: width 1s linear;
+}
+
+.timeRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 10px;
+  color: #1a5c75;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.ctrlBtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #0a3d52;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 4px 8px;
+  transition: opacity 0.1s;
+}
+.ctrlBtn:hover { opacity: 0.7; }
+.ctrlBtn:active { opacity: 0.5; }
+
+.playBtn {
+  background: #0a3d52;
+  color: #5bc8f5;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.1s;
+}
+.playBtn:hover { opacity: 0.85; }
+.playBtn:active { opacity: 0.7; }
+
+.device {
+  font-size: 10px;
+  color: #1a6a8a;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}

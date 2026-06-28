@@ -1,0 +1,36 @@
+[package]
+name = "nokia-widget"
+version = "0.1.0"
+description = "Nokia HUD Widget"
+authors = ["Anas"]
+edition = "2021"
+
+[package.metadata.bundle]
+name = "NokiaWidget"
+identifier = "com.manasahmed.nokiawidget"
+icon = ["icons/icon.ico"]
+
+[lib]
+name = "nokia_widget_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-shell = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-http = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
